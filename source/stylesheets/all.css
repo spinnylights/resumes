@@ -1,55 +1,60 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: "Sorts Mill Goudy";
+  src: url("../fonts/OFLGoudyStMTT.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-thin.ttf");
+}
+
 body {
-  background: #d4d4d4 url("../images/background.png");
+  font-family: "Sorts Mill Goudy", serif;
+  background: #f2f2f2;
+  color: #404040;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.center {
   text-align: center;
-  font-family: sans-serif; }
+}
+
+.sans {
+  font-family: "Raleway";
+}
 
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+  font-size: 4rem;
+}
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+h2 {
+  font-size: 2.3rem;
+}
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+h3 {
+  color: #050;
+}
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+h3::before {
+  content: "✩ ";
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: circle;
+}
+
+.skills {
+  width: 960px;
 }

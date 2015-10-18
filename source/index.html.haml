@@ -1,11 +1,22 @@
 ---
 title: Rails Developer
 ---
-%h1 Zoë Sparks
-%h2= current_page.data.title
+%h1.center.sans Zoë Sparks
+%h2.center.sans= current_page.data.title
+
+.vcard.center
+  .email
+    %a{href: "mailto:zoe@hush.es"} zoe@hush.es
+  .phone-number (512) 937-6080
+  .adr
+    .street-address
+      1186 Oak Grove Ave.
+      %span.locality Austin
+      %span.region TX
+      %span.postal-code 78702
 
 %h3 skills
-%table
+%table.section.skills
   %tr
     %th langauges
     %th frameworks
@@ -29,7 +40,7 @@ title: Rails Developer
     %td CSS, HTML, Sass
 
 %h3 selected open source projects
-%table
+%table.section
   %tr
     %td Fantasy Florist
     %td A Ruby-driven Twitter bot that describes imaginary flowering plants.
@@ -44,33 +55,36 @@ title: Rails Developer
     %td My Opporunity Hack team’s entry. Event donations framework. I wrote much of the JS code and documentation.
 
 %h3 work experience
-%table
+%table.section
   %tr
     %td Feb. 2014 – Oct. 2015
     %td
       %h4 Ruby Developer, Avende, Austin
-      %p Develop command line and web-based data-processing applications for Texas Department of Ag., Texas Nurses Assoc., and others.
+      %ul
+        %li Develop command line and web-based data-processing applications for Texas Department of Ag., Texas Nurses Assoc., and others.
   %tr
     %td 2010 – 2011
     %td
       %h4 NOC Technician I, Data Foundry (Colo Data Center), Austin, TX
-      %p Monitored network and chassis health.
-      %p Provided phone and email support for business customers with T1 connections and
-      rural customers with dial-up connections.
+      %ul
+        %li Monitored network and chassis health.
+        %li Provided phone and email support for business customers with T1 connections and rural customers with dial-up connections.
   %tr
     %td 2009 – 2010
     %td
       %h4 Technology Team Member, Robert Half Technology, Austin, TX
-      %p Provided support for Texas Bar Exam, cable running at Facebook, LBJ High classroom network set-up, etc.
+      %ul
+        %li Provided support for Texas Bar Exam, cable running at Facebook, LBJ High classroom network set-up, etc.
   %tr
     %td 2006 – 2007
     %td
       %h4 Computer Assistant, IT Services, Bard College at Simon’s Rock, Great Barrington, MA
-      %p Provided helpdesk, email, and phone support for students, faculty, and staff.
-      %p Installed, updated, and repaired college-owned computers and networking equipment.
+      %ul
+        %li Provided helpdesk, email, and phone support for students, faculty, and staff.
+        %li Installed, updated, and repaired college-owned computers and networking equipment.
 
 %h3 education
-%table
+%table.section
   %td 2006 – 2010
   %td
     %h4 B.A. in Music Theory and Composition, Bard College at Simon’s Rock, Great Barrington, MA., 3.1 GPA
