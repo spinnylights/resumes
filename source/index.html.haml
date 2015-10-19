@@ -1,43 +1,51 @@
 ---
 title: Rails Developer
 ---
-%h1.center.sans Zoë Sparks
-%h2.center.sans= current_page.data.title
+.row
+  .small-12.columns.text-center
+    %h1.sans Zoë Sparks
+.row
+  .small-12.columns.text-center
+    %h2.sans= current_page.data.title
 
-.vcard.center
-  .email
-    %a{href: "mailto:zoe@hush.es"} zoe@hush.es
-  .phone-number (512) 937-6080
-  .adr
-    .street-address
-      1186 Oak Grove Ave.
-      %span.locality Austin
-      %span.region TX
-      %span.postal-code 78702
+.row
+  .small-4.column
+  .small-4.columns.small-centered.text-center
+    %ul.vcard
+      %li.email
+        %a{href: "mailto:zoe@hush.es"} zoe@hush.es
+      %li.phone-number (512) 937-6080
+      %li.street-address
+        1186 Oak Grove Ave.
+        %span.locality Austin
+        %span.region TX
+        %span.postal-code 78702
+  .small-4.columns
 
-%h3 skills
-%table.section.skills
-  %tr
-    %th langauges
-    %th frameworks
-    %th testing
-    %th other
-  %tr
-    %td Ruby
-    %td Rails, Sinatra, Middleman
-    %td MiniTest, Cucumber
-  %tr
-    %td JavaScript
-    %td Backbone
-    %td Mocha, Jasmine
-    %td jQuery, Underscore, CoffeeScript, Node
-  %tr
-    %td Haskell
-  %tr
-    %td frontend
-    %td
-    %td
-    %td CSS, HTML, Sass
+.row
+  %h3 skills
+  %table.section.skills
+    %tr
+      %th langauges
+      %th frameworks
+      %th testing
+      %th other
+    %tr
+      %td Ruby
+      %td Rails, Sinatra, Middleman
+      %td MiniTest, Cucumber
+    %tr
+      %td JavaScript
+      %td Backbone
+      %td Mocha, Jasmine
+      %td jQuery, Underscore, CoffeeScript, Node
+    %tr
+      %td Haskell
+    %tr
+      %td frontend
+      %td
+      %td
+      %td CSS, HTML, Sass
 
 %h3 selected open source projects
 %table.section
@@ -89,16 +97,3 @@ title: Rails Developer
   %td
     %h4 B.A. in Music Theory and Composition, Bard College at Simon’s Rock, Great Barrington, MA., 3.1 GPA
     %p Graduated at the age of 20. Recipient of $52,000 in scholarship money.
-
-.vcard
-  %span.fn
-    Zoë Sparks
-  .email
-    %a{href: "mailto:zoe@hush.es"} zoe@hush.es
-  .phone-number (512) 937-6080
-  .adr
-    .street-address
-      1186 Oak Grove Ave.
-      %span.locality Austin
-      %span.region TX
-      %span.postal-code 78702
