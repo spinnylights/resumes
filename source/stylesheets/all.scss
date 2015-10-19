@@ -21,10 +21,6 @@ body {
   font-size: 1.2rem;
 }
 
-body, h1, h2, h3, h4 {
-  font-family: "Sorts Mill Goudy", serif;
-}
-
 .center {
   text-align: center;
 }
@@ -51,4 +47,12 @@ h3 {
 
 h3::before {
   content: "✩ ";
+}
+
+.skills-row {
+  padding-bottom: rem-calc(10);
+}
+
+.zebra > .row:nth-child(even) {
+  background-color: #ddd;
 }
