@@ -1,0 +1,7 @@
+{
+  "name": "zoe_sparks_resumes",
+  "dependencies": {
+    "foundation": "*",
+    "octicons": "*"
+  }
+}

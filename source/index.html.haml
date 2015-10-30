@@ -2,25 +2,23 @@
 title: Rails Developer
 ---
 .row
-  .small-12.columns.text-center
-    %h1.sans Zoë Sparks
-.row
-  .small-12.columns.text-center
-    %h2.sans= current_page.data.title
-
-.row
-  .small-4.column
-  .small-4.columns.small-centered.text-center
+  .small-2.column
+  .small-8.columns.small-centered.text-center
     %ul.vcard
+      %li.fn
+        %h1.sans Zoë Sparks
+      %li.title
+        %h2.sans= current_page.data.title
       %li.email
         %a{href: "mailto:zoe@hush.es"} zoe@hush.es
-      %li.phone-number (512) 937-6080
       %li.street-address
-        1186 Oak Grove Ave.
         %span.locality Austin
         %span.region TX
-        %span.postal-code 78702
-  .small-4.columns
+        %span.country USA
+      %li.url
+        %span.octicon.octicon-mark-github
+        %a{href: 'https://github.com/spinnylights'} spinnylights
+  .small-2.columns
 
 .row
   %h3 skills
@@ -31,6 +29,7 @@ title: Rails Developer
       %li Ruby (fluent)
       %li JavaScript + CoffeeScript (fluent)
       %li Haskell (familiar)
+      %li C# (familiar)
   .small-3.columns
     %h4 frameworks
     %ul.circle
@@ -38,59 +37,69 @@ title: Rails Developer
       %li Sinatra
       %li Middleman
       %li Backbone + Marionette
+      %li Bootstrap
+      %li Foundation
   .small-3.columns
     %h4 testing
     %ul.circle
       %li MiniTest
+      %li RSpec
       %li Cucumber
       %li Jasmine
       %li Mocha
+      %li Karma
+      %li Sinon
+      %li Nightwatch
   .small-3.columns
     %h4 other
     %ul.circle
       %li jQuery
       %li Underscore
       %li Node
+      %li Gulp
       %li CSS + Sass
       %li HTML + Haml
+
 .row
   %h3 selected open source projects
 .row
   .small-12.columns
-    %ul.no-bullet
-      %li Fantasy Florist: A Ruby-driven Twitter bot that describes imaginary flowering plants.
-      %li Scissors.JS: A JavaScript library for making Burroughs-style literary cut-ups and an accompanying web app.
-      %li Glittery: A Rails-based art gallery.
-      %li avidas/ Connecther-donate: My Opporunity Hack team’s entry. Event donations framework. I wrote much of the JS code and documentation.
+    %ul.square
+      %li 
+        <a href="https://github.com/spinnylights/fantasy_florist">Fantasy Florist</a>: A Ruby-driven Twitter bot that describes imaginary flowering plants.
+      %li <a href="https://github.com/spinnylights/scissors.js">Scissors.JS</a>: A JavaScript library for making Burroughs-style literary cut-ups and an accompanying web app.
+      %li <a href="https://github.com/spinnylights/desktop-archeology">Sentiment World</a>: My piece in the Institute of Desktop Archeology for Fusebox Festival 2015. A Ruby application that runs on a thin Linux layer, replacing the computer's OS.
+      %li <a href="https://github.com/Opportunity-Hack-Austin-2014/Renegades">Donation Party!</a>: A framework for setting up online fundraising I worked on with a small team at an eBay/PayPal hackathon. I wrote much of the frontend code and documentation.
 
 .row
   %h3 work experience
 .row
   .small-3.columns Feb. 2014 – Oct. 2015
   .small-9.columns
-    %h4 Ruby Developer, Avende, Austin
+    %h5 Software Developer, Avende, Austin
 .row
   .small-3.columns
   .small-9.columns
     %ul
-      %li Develop command line and web-based data-processing applications for Texas Department of Ag., Texas Nurses Assoc., and others.
+      %li Developed web-based (Rails, Sinatra), command line, and data-processing applications for the Texas Department of Agriculture, the Texas Nurses Association, Jet Specialty, and others. 
+      %li Built internal tools for the IT team that interfaced with Active Directory.
 .row
   .small-3.columns 2010 – 2011
   .small-9.columns
-    %h4 NOC Technician I, Data Foundry (Colo Data Center), Austin, TX
+    %h5 NOC Technician I, Data Foundry (Colo Data Center), Austin, TX
     %ul
       %li Monitored network and chassis health.
       %li Provided phone and email support for business customers with T1 connections and rural customers with dial-up connections.
 .row
   .small-3.columns 2009 – 2010
   .small-9.columns
-    %h4 Technology Team Member, Robert Half Technology, Austin, TX
+    %h5 Technology Team Member, Robert Half Technology, Austin, TX
     %ul
       %li Provided support for Texas Bar Exam, cable running at Facebook, LBJ High classroom network set-up, etc.
 .row
   .small-3.columns 2006 – 2007
   .small-9.columns
-    %h4 Computer Assistant, IT Services, Bard College at Simon’s Rock, Great Barrington, MA
+    %h5 Computer Assistant, IT Services, Bard College at Simon’s Rock, Great Barrington, MA
     %ul
       %li Provided helpdesk, email, and phone support for students, faculty, and staff.
       %li Installed, updated, and repaired college-owned computers and networking equipment.
@@ -100,7 +109,7 @@ title: Rails Developer
 .row
   .small-3.columns 2006 – 2010
   .small-9.columns
-    %h4 B.A. in Music Theory and Composition, Bard College at Simon’s Rock, Great Barrington, MA., 3.1 GPA
+    %h5 B.A. in Music Theory and Composition, Bard College at Simon’s Rock, Great Barrington, MA., 3.1 GPA
     %ul
       %li Graduated at the age of 20.
       %li Recipient of $52,000 in scholarship money.
