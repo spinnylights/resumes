@@ -30,7 +30,7 @@ body {
 }
 
 .test-border {
-  border: 1px solid orange;
+  border: 1px solid blue;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h3 {
 }
 
 h3::before {
-  content: "✩ ";
+  //content: "✩ ";
 }
 
 .vcard {
